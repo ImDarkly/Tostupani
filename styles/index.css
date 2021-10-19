@@ -4,6 +4,8 @@
     --white: #FEFEFE;
     --button-bg: #782B00;
     --button-fg: #FFCBAE;
+    --dark-light-grey: #373737;
+    --dark-red: #8B3A3A;
 }
 body{
     margin: 0;
@@ -144,7 +146,7 @@ caption{
 }
 
 .hyper-button{
-    margin-top: 64px;
+    margin-top: 32px;
     display: flex;
     width: 100vw;
 }
@@ -160,4 +162,47 @@ caption{
     font-family: 'Manrope', sans-serif;
     border-radius: 25px;
     padding: 8px 48px;
+}
+
+.menu{
+    padding-top: 64px;
+    display: grid;
+}
+
+.card{
+    margin: 32px auto;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+    border: 4px solid var(--dark-light-grey);
+    transition: all 100ms;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card-image{
+    margin: 16px  auto 0 auto;
+    display: flex;
+    width: 100%;
+}
+.card-image img{
+    width: 180px;
+    margin: auto;
+}
+.card-description{
+    margin: 8px 0 0 32px;
+    color: var(--white);
+    font-size: 24px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+.card-price{
+    margin: 8px 0 0 32px;
+    color: var(--dark-red);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
 }
