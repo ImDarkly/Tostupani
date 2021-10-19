@@ -1,4 +1,10 @@
-
+:root{
+    --dark-grey: #151515;
+    --light-grey: #333333;
+    --white: #FEFEFE;
+    --button-bg: #782B00;
+    --button-fg: #FFCBAE;
+}
 body{
     margin: 0;
     padding: 0;
@@ -8,22 +14,28 @@ body{
     min-height: 100vh;
     min-width: 100vw;
     background: rgb(51,51,51);
-    background: radial-gradient(50% 50% at 50% 50%, #333333 0%, #151515 100%);
+    background: radial-gradient(50% 50% at 50% 50%, var(--light-grey) 0%, var(--dark-grey) 100%);
+    display: block;
 }
-nav{
+
+.sticky{
     position: fixed;
-    width: 100vw;
-    background: radial-gradient(36.13% 100% at 50% 0%, rgba(0, 0, 0, 0.01) 15.62%, #151515 100%);
-    backdrop-filter: blur(25px);
-    height: 96px;
+    z-index: 2;
 }
 
 .navbar{
     display: flex;
+    position: absolute;
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.01) 0%, #0F0F0F 100%);
+    backdrop-filter: blur(50px);
+    height: 96px;
+    margin: 0;
+    z-index: 2;
 }
 
 .logo{
-    margin: 12px auto 0 32px;
+    margin: 12px auto 0 16px;
     height: 72px;
     width: 196px;
     z-index: 2;
@@ -47,9 +59,12 @@ nav{
     position: absolute;
     background: transparent;
     border: none;
+    outline: none;
     z-index: 2;
     width: 48px;
     height: 48px;
+    
+    border-radius: 50%;
 }
 .burger span{
     top: 12px;
@@ -57,7 +72,7 @@ nav{
     position: absolute;
     width: 32px;
     height: 5px;
-    background: #FEFEFE;
+    background: var(--white);
     border-radius: 0px 2px;
     z-index: 1;
     transition: all 100ms;
@@ -87,4 +102,62 @@ nav{
     position: absolute;
     margin-top: 10px;
     transform: rotate(-135deg);
+}
+.banner{
+    height: 200vh;
+}
+.banner img{
+    margin: 96px auto 0 auto;
+}
+.main-photo{
+    display: flex;
+}
+.caption p{
+    font-family: 'Gabriela', serif;
+    color: var(--white);
+    font-size: 32px;
+    text-align: center;
+    margin: 0 14px;
+}
+.caption img{
+    margin: 0;
+    float: right;
+    width: 92px;
+    z-index: 1;
+}
+caption{
+    position: relative;
+    display: flex;
+}
+.leaf{
+    position: absolute;
+    width: 100vw;
+    height: 92px;
+    margin-top: -76px;
+}
+.description{
+    font-family: 'Gabriela', serif;
+    color: var(--white);
+    font-size: 16px;
+    text-align: center;
+    margin: 0 24px;
+}
+
+.hyper-button{
+    margin-top: 64px;
+    display: flex;
+    width: 100vw;
+}
+
+.hyper-button button{
+    background: transparent;
+    background-color: var(--button-bg);
+    margin: auto;
+    border: none;
+    outline: none;
+    color: var(--button-fg);
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    border-radius: 25px;
+    padding: 8px 48px;
 }
