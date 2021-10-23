@@ -7,16 +7,23 @@
     --dark-light-grey: #373737;
     --dark-red: #8B3A3A;
 }
+html{
+    height: fit-content;
+}
 body{
     margin: 0;
     padding: 0;
+    height: fit-content;
 }
 
 .background{
-    min-width: 100vw;
-    background: rgb(51,51,51);
     background: radial-gradient(50% 50% at 50% 50%, var(--light-grey) 0%, var(--dark-grey) 100%);
-    display: block;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: fit-content;
+    background-size: cover;
 }
 
 .sticky{
@@ -66,9 +73,6 @@ body{
     height: 48px;
     
     border-radius: 50%;
-}
-.burger:hover{
-    
 }
 .burger span{
     top: 12px;
