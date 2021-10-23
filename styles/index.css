@@ -114,9 +114,6 @@ body{
     margin-top: 10px;
     transform: rotate(225deg);
 }
-.banner{
-    height: 200vh;
-}
 .banner img{
     margin: 96px auto 0 auto;
 }
