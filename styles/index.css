@@ -28,7 +28,7 @@ body{
     display: flex;
     position: absolute;
     width: 100vw;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.01) 0%, #0F0F0F 100%);
+    background: linear-gradient(180deg, rgba(21, 21, 21, 0.7) 0%, #111111 100%);
     backdrop-filter: blur(50px);
     height: 96px;
     margin: 0;
