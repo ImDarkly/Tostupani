@@ -27,11 +27,17 @@ body{
     display: flex;
     position: absolute;
     width: 100vw;
-    background: linear-gradient(180deg, rgba(21, 21, 21, 0.7) 0%, #111111 100%);
+    background: linear-gradient(180deg, #111111 0%, rgba(21, 21, 21, 0.7) 100%);
     backdrop-filter: blur(50px);
     height: 96px;
     margin: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     z-index: 2;
+    transition: all 500ms ease-in-out;
+}
+/*cubic-bezier(.5,-0.14,.87,.52)*/
+.hide .navbar{
+    height: 100vh;
 }
 
 .logo{
@@ -211,4 +217,41 @@ caption{
     font-weight: normal;
     font-size: 16px;
     font-family: 'Manrope', sans-serif;
+}
+.burger-content{
+    position: absolute;
+}
+.hide .burger-buttons {
+    visibility: hidden;
+    opacity: 0;
+}
+.burger-buttons{
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    transition: all 500ms;
+}
+.burger-buttons .burger-button-1, .burger-button-2, .burger-button-3, .burger-button-4{
+    margin: 4px 32px;
+}
+.show .burger-buttons{
+    visibility: visible;
+    opacity: 1;
+}
+
+.burger-buttons .burger-button-1, .burger-button-2, .burger-button-3, .burger-button-4 {
+    font-size: 32px;
+    outline: hidden;
+}
+.burger-content button{
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+    padding: 16px;
+    border-radius: 25px;
+    transition: all 500ms;
+}
+.burger-content button:hover{
+    background-color: var(--button-bg);
 }
