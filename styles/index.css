@@ -63,7 +63,6 @@ body{
     z-index: 2;
     width: 48px;
     height: 48px;
-    
     border-radius: 50%;
 }
 .burger span{
@@ -149,17 +148,22 @@ caption{
     width: 100vw;
 }
 
+.hyper-button button:active, .hyper-button button:active{
+    outline: 5px solid #be46004d;
+    background: #833E17;
+}
+
 .hyper-button button{
     background: transparent;
     background-color: var(--button-bg);
-    margin: auto;
-    border: none;
-    outline: none;
+    margin: 12px auto;
+    border: transparent;
     color: var(--button-fg);
     font-size: 20px;
     font-family: 'Manrope', sans-serif;
     border-radius: 25px;
     padding: 8px 48px;
+    
 }
 
 .menu{
