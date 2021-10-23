@@ -185,7 +185,7 @@ caption{
     transition: transform 0.5s cubic-bezier(.68,-0.6,.32,1.6);
 }
 .card:hover{
-    transform: scale(1.5);
+    transform: scale(1.1);
     background: radial-gradient(50% 50% at 50% 50%, #444444 0%, #333333 100%);
     border: 4px solid rgba(0, 0, 0, 0);
     filter: none;
